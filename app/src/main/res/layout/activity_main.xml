@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:singleLine="true"
+                android:text="Camera Controller"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+
+
+                />
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:orientation="vertical"
+                android:layout_margin="20dp"
+
+
+                android:layout_height="200dp">
+
+
+            <ImageView
+                android:id="@+id/uparrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="20dp"
+                android:src="@drawable/upkey"
+                 />
+
+            <RelativeLayout
+                android:id="@+id/lll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/leftkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:src="@drawable/leftkey"
+                     />
+
+                <ImageView
+                    android:id="@+id/rightkey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:src="@drawable/rightkey"
+                   android:layout_alignParentRight="true"
+                  />
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/downarrow"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:padding="20dp"
+                android:src="@drawable/downkey"
+            />
+            </RelativeLayout>
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:singleLine="true"
+        android:text="Camera View"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+
+        />
+    <VideoView
+        android:id="@+id/vdVw"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="center" />
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:singleLine="true"
+                android:text="Car Controller"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+
+
+                />
+
+            <ImageView
+                android:id="@+id/racebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/raceimage" />
+
+
+            <ImageView
+                android:id="@+id/breakbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/breakumage" />
+            <TextView
+                android:id="@+id/msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:singleLine="true"
+                android:text="Netural"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
